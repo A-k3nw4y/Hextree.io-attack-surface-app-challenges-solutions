@@ -13,7 +13,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.evilcorp.Hextree_SendIntentsActivity;
+import com.example.evilcorp.Hextree_IntentsActivity;
 import com.example.evilcorp.R;
 
 public class Chall10CatcherActivity extends AppCompatActivity {
@@ -35,7 +35,7 @@ public class Chall10CatcherActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Chall10CatcherActivity.this, Hextree_SendIntentsActivity.class);
+                Intent intent = new Intent(Chall10CatcherActivity.this, Hextree_IntentsActivity.class);
                 startActivity(intent);
             }
         });

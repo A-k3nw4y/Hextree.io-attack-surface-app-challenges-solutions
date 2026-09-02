@@ -7,7 +7,9 @@ android {
     compileSdk {
         version = release(36)
     }
-
+    buildFeatures {
+        aidl = true
+    }
     defaultConfig {
         applicationId = "com.example.evilcorp"
         minSdk = 30

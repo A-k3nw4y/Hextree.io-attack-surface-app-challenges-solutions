@@ -12,7 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import android.net.Uri;
 
-public class Hextree_SendIntentsActivity extends AppCompatActivity {
+public class Hextree_IntentsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class Hextree_SendIntentsActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Hextree_SendIntentsActivity.this, MainActivity.class);
+                Intent intent = new Intent(Hextree_IntentsActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -296,7 +296,7 @@ public class Hextree_SendIntentsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // this intent is just there to open the Challenge 10 activity.
-                Intent intent = new Intent (Hextree_SendIntentsActivity.this , com.example.evilcorp.extraActivities.Chall10CatcherActivity.class);
+                Intent intent = new Intent (Hextree_IntentsActivity.this , com.example.evilcorp.extraActivities.Chall10CatcherActivity.class);
                 startActivity(intent);
             }
         });
@@ -314,7 +314,7 @@ public class Hextree_SendIntentsActivity extends AppCompatActivity {
         button13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (Hextree_SendIntentsActivity.this , com.example.evilcorp.extraActivities.Chall22Activity.class);
+                Intent intent = new Intent (Hextree_IntentsActivity.this , com.example.evilcorp.extraActivities.Chall22Activity.class);
                 startActivity(intent);
             }
         });
@@ -326,7 +326,7 @@ public class Hextree_SendIntentsActivity extends AppCompatActivity {
         button14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (Hextree_SendIntentsActivity.this , com.example.evilcorp.extraActivities.Chall23Activity.class);
+                Intent intent = new Intent (Hextree_IntentsActivity.this , com.example.evilcorp.extraActivities.Chall23Activity.class);
                 startActivity(intent);
 
             }
@@ -354,7 +354,6 @@ public class Hextree_SendIntentsActivity extends AppCompatActivity {
 
             // extra library to show what data comes with the intent reply.
         Utils.showDialog(this, data);
-
     }
 }
 

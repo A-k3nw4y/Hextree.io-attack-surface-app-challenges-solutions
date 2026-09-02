@@ -12,7 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.evilcorp.Hextree_SendIntentsActivity;
+import com.example.evilcorp.Hextree_IntentsActivity;
 import com.example.evilcorp.R;
 
 public class Chall22Activity extends AppCompatActivity {
@@ -33,7 +33,7 @@ public class Chall22Activity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Chall22Activity.this, Hextree_SendIntentsActivity.class);
+                Intent intent = new Intent(Chall22Activity.this, Hextree_IntentsActivity.class);
                 startActivity(intent);
             }
         });

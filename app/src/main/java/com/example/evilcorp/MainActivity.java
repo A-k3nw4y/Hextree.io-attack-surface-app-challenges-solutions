@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                //Intent to the Second Activity
-               Intent intent = new Intent(MainActivity.this, Hextree_SendIntentsActivity.class);
+               Intent intent = new Intent(MainActivity.this, Hextree_IntentsActivity.class);
                startActivity(intent);
             }
         });
@@ -39,7 +39,69 @@ public class MainActivity extends AppCompatActivity {
         /// /////////////////////////////////
 
 
+        //BTN TWO
+        Button buttonToDeeplinks = findViewById(R.id.BtntoDeeplinksActivity);
+        buttonToDeeplinks.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //Intent to the Second Activity
+                Intent intent = new Intent(MainActivity.this, DeeplinksActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        /// /////////////////////////////////
+
+        //BTN Three
+        Button buttonToBroadcastReceiversActivity = findViewById(R.id.BtntoBroadcastReceiversActivity);
+        buttonToBroadcastReceiversActivity.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //Intent to the Second Activity
+                Intent intent = new Intent(MainActivity.this, BroadcastReceiversActivity.class);
+                startActivity(intent);
+            }
+        });
+
+/// /////////////////////////////////
+
+        //BTN Three
+        Button buttonToServicesActivity = findViewById(R.id.BtntoServicesActivity);
+        buttonToServicesActivity.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //Intent to the Second Activity
+                Intent intent = new Intent(MainActivity.this, ServicesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+/// /////////////////////////////////
+
+        //BTN Three
+        Button buttonToContentProvidersActivity = findViewById(R.id.BtntoContentProvidersActivity);
+        buttonToContentProvidersActivity.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //Intent to the Second Activity
+                Intent intent = new Intent(MainActivity.this, ContentProvidersActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+/// /////////////////////////////////
+
+        //BTN Three
+        Button buttonToWebviewsActivity = findViewById(R.id.BtntoWebviewsActivity);
+        buttonToWebviewsActivity.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //Intent to the Second Activity
+                Intent intent = new Intent(MainActivity.this, WebviewsActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

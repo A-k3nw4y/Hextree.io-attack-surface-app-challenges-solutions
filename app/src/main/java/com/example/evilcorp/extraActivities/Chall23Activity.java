@@ -1,12 +1,9 @@
 package com.example.evilcorp.extraActivities;
 
-import static androidx.fragment.app.FragmentManager.TAG;
-
 import android.annotation.SuppressLint;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -17,7 +14,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.evilcorp.Hextree_SendIntentsActivity;
+import com.example.evilcorp.Hextree_IntentsActivity;
 import com.example.evilcorp.R;
 
 public class Chall23Activity extends AppCompatActivity {
@@ -39,7 +36,7 @@ public class Chall23Activity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Chall23Activity.this, Hextree_SendIntentsActivity.class);
+                Intent intent = new Intent(Chall23Activity.this, Hextree_IntentsActivity.class);
                 startActivity(intent);
             }
         });
